@@ -15,9 +15,10 @@ export default function ThemeProvider({ children }) {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     
-    const initialTheme = savedTheme || systemTheme;
+    // Default to dark theme if no saved theme exists
+    const initialTheme = savedTheme || "dark";
+    
     setTheme(initialTheme);
     document.documentElement.classList.toggle("dark", initialTheme === "dark");
     setMounted(true);

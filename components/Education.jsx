@@ -7,7 +7,7 @@ const educationData = [
     degree: "Computer Science and Technology",
     school: "Feni Polytechnic Institute",
     date: "2022 - 2026",
-    description: "Undergraduate Diploma in Computer Science and Technology.",
+    description: " Diploma in Computer Science and Technology.",
   },
   {
     degree: "Secondary School Certificate",
