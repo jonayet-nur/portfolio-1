@@ -10,10 +10,10 @@ const educationData = [
     description: "Undergraduate Diploma in Computer Science and Technology.",
   },
   {
-    degree: "Higher Secondary Certificate",
+    degree: "Secondary School Certificate",
     school: "Porshuram Govt. Pilot High School",
     date: "2020 - 2022",
-    description: "Science department with a focus on Mathematics and Physics. Active member of the Science Club.",
+    description: "Science department with a focus on Mathematics and Physics. ",
   }
 ];
 
