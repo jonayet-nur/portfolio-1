@@ -90,7 +90,7 @@ export default function Hero() {
     <section
       id="home"
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden mt-15"
     >
       {/* Background Effects */}
       <div ref={bgRef} className="absolute inset-0 z-0 pointer-events-none">
@@ -149,11 +149,11 @@ export default function Hero() {
                 { Icon: LinkedinIcon, href: "https://linkedin.com/in/jonayet-nur-tanjim" }
               ].map(({ Icon, href }, i) => (
                 <a key={i} href={href} target="_blank" rel="noopener noreferrer">
-                <button
-                  className="p-2.5 rounded-full border border-black/5 dark:border-white/10 hover:bg-accent/10 hover:border-accent/40 text-foreground/80 dark:text-white/80 hover:text-accent transition-all hover:-translate-y-1 cursor-pointer"
-                >
-                  <Icon className="w-4.5 h-4.5" />
-                </button>
+                  <button
+                    className="p-2.5 rounded-full border border-black/5 dark:border-white/10 hover:bg-accent/10 hover:border-accent/40 text-foreground/80 dark:text-white/80 hover:text-accent transition-all hover:-translate-y-1 cursor-pointer"
+                  >
+                    <Icon className="w-4.5 h-4.5" />
+                  </button>
                 </a>
               ))}
             </div>

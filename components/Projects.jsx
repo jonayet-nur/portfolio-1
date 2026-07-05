@@ -66,9 +66,9 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative"
+              className="group relative h-full flex"
             >
-              <div className="glass rounded-[2.5rem] overflow-hidden border-accent/10 transition-all duration-500 group-hover:border-accent/30 group-hover:shadow-2xl group-hover:shadow-accent/10">
+              <div className="glass w-full flex flex-col rounded-[2.5rem] overflow-hidden border-accent/10 transition-all duration-500 group-hover:border-accent/30 group-hover:shadow-2xl group-hover:shadow-accent/10">
                 {/* Image Section */}
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <div className="absolute inset-0 bg-accent/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -91,7 +91,7 @@ export default function Projects() {
                 </div>
 
                 {/* Content Section */}
-                <div className="p-8 space-y-4">
+                <div className="p-8 space-y-4 flex flex-col flex-grow">
                   <div className="flex justify-between items-start">
                     <div>
                       <p className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">{project.category}</p>
@@ -99,11 +99,11 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-secondary text-sm leading-relaxed line-clamp-2">
+                  <p className="text-secondary text-sm leading-relaxed line-clamp-2 flex-grow">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <div className="flex flex-wrap gap-2 pt-2 mt-auto">
                     {project.tags.map((tag) => (
                       <span key={tag} className="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-widest bg-accent/5 text-accent">
                         {tag}
