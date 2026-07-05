@@ -148,9 +148,9 @@ export default function Navbar() {
                   </motion.div>
                 );
               })}
-              <button className="w-full bg-accent text-white py-3.5 rounded-xl font-bold mt-2 shadow-lg shadow-accent/20 hover:brightness-110 active:scale-[0.98] transition-all">
+              {/* <button className="w-full bg-accent text-white py-3.5 rounded-xl font-bold mt-2 shadow-lg shadow-accent/20 hover:brightness-110 active:scale-[0.98] transition-all">
                 RESUME
-              </button>
+              </button> */}
             </div>
           </motion.div>
         )}
